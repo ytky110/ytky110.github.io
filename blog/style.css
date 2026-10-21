@@ -28,3 +28,12 @@ code {
     text-align: center;
 }
 
+table {
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid black;
+}
