@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>20261024</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>デスクトップ環境</h1>
+  <p>2026/10/24　<a href="/blog">ポスト一覧</a></p>
+  <hr>
+  <p>
+<a href="https://www.ministrings.ch/index_eng.php">Ministrings</a>
+の北欧でのツアーが終わり、スイスの家に帰ってきた。
+全然パソコンの話を書かなかったので今日はデスクトップ環境について書いていく。
+</p><p>
+パソコン面では、僕はかなり父に影響を受けている。
+今の環境を要約すると、FreeBSDの上にWaylandコンポジタのSwayを乗せ、
+ブラウザはFirefox、シェルはfish、エディタはnvimといった所だ。
+日本語入力はFcitx5+Anthyを使い、
+<a href="https://github.com/ytky110/kb-layouts">大西配列に触発されたオリジナルのキーボード配列</a>を
+<a href="https://github.com/ytky110/scripts/blob/master/fcitx5-xkb-switch-anthy.sh">自前のスクリプト</a>で毎回変更している。
+<a href="https://github.com/ytky110/configs">これらの設定ファイルは全て公開している。</a>
+GNU Stowを使ってインストールしている
+（他にも<a href="https://github.com/ytky110/ypkg2">オリジナルのパッケージを管理する</a>のにも使っている。
+かなり便利である）。
+ドットファイルを管理する専用のアプリなどもあるみたいだが、まだ試していない。
+話を戻すと、自分で言うのもなんだが、かなり変態的なデスクトップ環境である。
+</p><p>
+これらのパーツのそれぞれの利点をまとめていく。
+swayは設定ファイルが柔軟でさらに全てキーボードで操作でき、
+ウィンドウをパネル状でキレイに配置してくれる。
+次にfishシェル。補完、履歴やキレイな色分けがすごく便利である。
+gitのコミットやマウントファイルシステムなど
+ただのファイル一覧ではない補完も充実している。
+自分はまだ使っていないが、自分で補完システムも構築できる。
+さらにシェルスクリプト用の機能が豊富で文法も簡素で使いやすい。
+さらにこの機能はfishに組み込まれているので移植性が高い。
+このfishのプロンプトにはstarshipを使っている。
+カスタムするのが楽しいしキレイで見やすく作れる。
+最後はエディタ。vi/Emacs戦争なんかがあるが、
+僕はvi派（正確に言うとvim。viは難しすぎる）である。
+Emacsも少しだけ使ってみたが、設定や操作の感じがあまり合わなかった。
+vimはどこでも乗っているしEmacs Makes Any Computer Slowである（言いたいだけ）。
+さらにNeovimには色んな拡張機能が付けられる。
+小指を痛めずに拡張機能を使うなら断然こっちだろう。
+だが欠点もある。これは僕がここで列挙したソフト全てに言えるが、
+設定や構築がめんどくさい。使うだけならそんなに難しくはない筈だが、
+しっかりとカスタムして自分に合わせるならかなりの労力が必要になるだろう。
+それでも僕は自分に合ったデスクトップ環境を日々探求している。
+  </p>
+<p>
+    <img
+        src="img/20261024/desktop.png"
+        style="max-width: 100%; height: auto;"
+    >
+Neovim、fishとFirefoxを起動した僕のデスクトップの画面。
+</p>
+  <div class="footer">
+    <hr>
+    <p>ホーム =&gt; <a href="/ja">index.html</a></p>
+    <p>Yutaka Goy - &lt;me@yutaka.ch&gt;</p>
+  </div>
+</body>
+</html>
